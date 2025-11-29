@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Dashboard from './pages/Dashboard';
 import Auth from './pages/Auth';
 import Sidebar from './components/Sidebar';
+import Drone from './pages/Drone';
 
 // Import all CSS files
 import './components.css';
@@ -10,7 +11,7 @@ import './pages.css';
 
 const App = () => {
     // Basic authentication state simulation
-    const [isAuthenticated, setIsAuthenticated] = React.useState(false); 
+    const [isAuthenticated, setIsAuthenticated] = React.useState(true); 
 
     return (
         <Router>
@@ -27,6 +28,7 @@ const App = () => {
                                 <Routes>
                                     <Route path="/" element={<Dashboard />} />
                                     {/* Add more admin routes here (e.g., /settings, /drones) */}
+                                    <Route path="/drones" element={<Drone />} />
                                     <Route path="*" element={<Navigate to="/" replace />} />
                                 </Routes>
                             </div>
