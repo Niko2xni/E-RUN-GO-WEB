@@ -10,6 +10,7 @@ const drones = [
     { id: 'D-006', status: 'Maintenance', location: 'Hangar B', battery: 60 },
     { id: 'D-007', status: 'Online', location: 'Warehouse A', battery: 90 },
     { id: 'D-008', status: 'Charging', location: '456 Oak St', battery: 40 },
+    { id: 'D-009', status: 'Delivering', location: '126 Maple St', battery: 51 },
     { id: 'D-010', status: 'Online', location: 'Hangar B', battery: 88 }
 ];
 
