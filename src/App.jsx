@@ -4,6 +4,8 @@ import Dashboard from './pages/Dashboard';
 import Auth from './pages/Auth';
 import Sidebar from './components/Sidebar';
 import Drone from './pages/Drone';
+import Orders from './pages/Orders';
+import Robot from './pages/Robots';
 
 // Import all CSS files
 import './components.css';
@@ -12,7 +14,7 @@ import './pages.css';
 const App = () => {
     // Basic authentication state simulation
     const [isAuthenticated, setIsAuthenticated] = React.useState(true); 
-
+    
     return (
         <Router>
             <Routes>
@@ -29,7 +31,8 @@ const App = () => {
                                     <Route path="/" element={<Dashboard />} />
                                     {/* Add more admin routes here (e.g., /settings, /drones) */}
                                     <Route path="/drones" element={<Drone />} />
-                                    <Route path="*" element={<Navigate to="/" replace />} />
+                                    <Route path="orders" element={<Orders/>} />
+                                    <Route path="robots" element={<Robot/>} />
                                 </Routes>
                             </div>
                         </div>

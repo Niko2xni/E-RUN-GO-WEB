@@ -8,7 +8,7 @@ const TransactionHistory = ({ transactions }) => {
         <thead>
           <tr>
             <th>Transaction ID</th>
-            <th>User</th>
+  
             <th>Order ID</th>
             <th>Amount</th>
             <th>Payment Method</th>
@@ -20,7 +20,6 @@ const TransactionHistory = ({ transactions }) => {
           {transactions.map((trx) => (
             <tr key={trx.id}>
               <td>{trx.id}</td>
-              <td>{trx.user}</td>
               <td>{trx.orderId}</td>
               <td className="amount">${trx.amount.toFixed(2)}</td>
               <td>{trx.method}</td>

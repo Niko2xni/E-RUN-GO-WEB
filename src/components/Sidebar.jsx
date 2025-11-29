@@ -19,8 +19,8 @@ const Sidebar = () => {
                 <Link to="/drones" className={isActive('/drones')}>
                     Drones
                 </Link>
-                <Link to="/users"  className={isActive('/users')}>
-                    Users
+                <Link to="/robots" className={isActive('/robots')}>
+                    Robots
                 </Link>
             </nav>
         </div>
