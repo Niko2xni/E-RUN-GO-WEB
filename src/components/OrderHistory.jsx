@@ -9,6 +9,7 @@ const OrderHistory = ({ orders }) => {
                         <th>Status</th>
                         <th>Drone ID</th>
                         <th>Destination</th>
+                        <th>Amount</th>
                         <th>Date</th>
                     </tr>
                 </thead>
@@ -19,6 +20,8 @@ const OrderHistory = ({ orders }) => {
                             <td>{order.status}</td>
                             <td>{order.droneId}</td>
                             <td>{order.destination}</td>
+                            {/* UPDATED: Uses Peso symbol */}
+                            <td className="amount">₱{order.amount.toFixed(2)}</td> 
                             <td>{order.date}</td>
                         </tr>
                     ))}

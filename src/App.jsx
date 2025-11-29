@@ -13,7 +13,7 @@ import './pages.css';
 
 const App = () => {
     // Basic authentication state simulation
-    const [isAuthenticated, setIsAuthenticated] = React.useState(true); 
+    const [isAuthenticated, setIsAuthenticated] = React.useState(false); 
     
     return (
         <Router>

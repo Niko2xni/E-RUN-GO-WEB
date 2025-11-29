@@ -6,7 +6,7 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
-            <h1>DRONE ADMIN</h1>
+            <h1>E-RUN GO</h1>
             <nav>
                 <Link to="/" className={isActive('/')}>
                     Dashboard

@@ -21,7 +21,8 @@ const TransactionHistory = ({ transactions }) => {
             <tr key={trx.id}>
               <td>{trx.id}</td>
               <td>{trx.orderId}</td>
-              <td className="amount">${trx.amount.toFixed(2)}</td>
+              {/* UPDATED: Uses Peso symbol */}
+              <td className="amount">₱{trx.amount.toFixed(2)}</td>
               <td>{trx.method}</td>
               <td>
                 <span className={`pay-status ${trx.status.toLowerCase()}`}>
